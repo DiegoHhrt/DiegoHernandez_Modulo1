@@ -10,7 +10,7 @@
             <legend>Solicitud de ingreso</legend>
             <br>
             <label for="nombre"> Nombre(s):
-                <input type="text" name="nombre" placeholder="Nombre" maxlength="30" required>
+                <input type="text" name="nombre" placeholder="Nombre" maxlength="30" required id="nombre">
             </label>
             <br><br>
             <label for="aPaterno"> Apellido Paterno
@@ -30,9 +30,9 @@
                 </select>
             </label>
             <br><br><br>
-            <label for="age"> Edad:
+            <label for="age"> Edad: <br>17|18|19|20|21|22|23|24|25
                 <br>
-                17<input type="range" min="17" max="25" value="19" step="1">25
+                <input type="range" min="17" max="25" value="19" step="1">
                 <datalist id="tickmarks">
                     <option value="17">
                     <option value="18">

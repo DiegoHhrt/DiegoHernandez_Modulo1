@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>секретный код</title>
+</head>
+<body>
+    <form action="./traduccion.php">
+        <fieldset style="width:700px;">
+            <legend><h3>Traductor de morse</h3></legend>
+            <h4>Selecciona cómo será tu traducción</h4>
+            <label for="translation">
+                <select name="translation">
+                    <option value="mToS">Morse a español</option>
+                    <option value="sToM">Español a morse</option>
+                </select>
+            </label>
+            <h4>Inserta el código</h4>
+            <p>Si traduces de español a morse, no uses signos ortográficos a excepción de signos de cierre de admiración e interrogación.</p>
+            <p>Si traduces de morse a español, no uses ningún signo diferente a guiones y puntos.</p>
+            <label for="text">
+                <textarea name="text" cols="75" rows="25" required></textarea>
+            </label>
+            <br><br>
+            <button type="submit">Traducir</button>
+        </fieldset>
+    </form>
+</body>
+</html>
