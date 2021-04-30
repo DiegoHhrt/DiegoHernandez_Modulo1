@@ -5,25 +5,50 @@
         <title>Chess</title>
     </head>
     <body>
-        <table border="1">
-            <td></td>
-        </table>
+        <h1>Tablero de ajedrez</h1>
         <?php   
-
-            $x=7;
+            $x=10;
             $i=0;
             $y=0;
-            while($i<=$x)
+            $white="./blanco.jpg";
+            $black="./negro.jpg";
+            $whdth="100";
+            $bord="1";
+            echo "<table border=".$bord.">";
+            for($i=1;$i<=$x;$i++)
             {
-                for($y=0;$y<=$x;$y++)
+                echo "<tr>";
+                if($i%2!=0)
                 {
-                    echo $y;
+                    for($y=1;$y<=$x;$y++)
+                    {
+                        if($y%2!=0)
+                        {
+                            echo "<td><img src=".$white." width=".$whdth."></td>";
+                        }
+                        else
+                        {
+                            echo "<td><img src=".$black." width=".$whdth."></td>";
+                        }        
+                    }
                 }
-                echo "<br>";
-                echo $i;
-                $i++;
+                else
+                {
+                    for($y=1;$y<=$x;$y++)
+                    {
+                        if($y%2!=0)
+                        {
+                            echo "<td><img src=".$black." width=".$whdth."></td>";
+                        }
+                        else
+                        {
+                            echo "<td><img src=".$white." width=".$whdth."></td>";
+                        }        
+                    }
+                }
             }
-      
+        echo "</table>" ;
         ?>
+        
     </body>
 </html>
