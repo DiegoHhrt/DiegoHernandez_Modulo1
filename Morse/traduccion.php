@@ -52,8 +52,6 @@
     $resultS=[];
     $i=0;
     $y=0;
-    $ascciMay=65;
-    $ascciMin=97;
 
     $translation=(isset($_POST["translation"])&&$_POST["translation"]!="")?$_POST["translation"]:"Inválido";
     $text=(isset($_POST["text"])&&$_POST["text"]!="")?$_POST["text"]:"Inválido";
@@ -68,37 +66,24 @@
         {
             $letters=str_split($text, 1);
 
-            //echo "<br><br>";
-            //echo var_dump($letters);
             foreach($letters as $key => $comparation)
             {
-                // echo "<br><br>";
-                // echo var_dump($key);
-                //echo var_dump($comparation);
-                // echo "<br><br>";
                 $i++;
             }
             for($y=0;$y<$i;$y++)
             {
-                $ascciMay=65;
-                $ascciMin=97;
-                while($ascciMay<=90&&$validation==1)
+                $validation=0;
+                if(ord($letters[$y])>=60&&ord($letters[$y])<=90)
                 {
-                    if(ord($letters[$y])==$ascciMay)
-                    {
-                        echo $letters[$y];
-                        $validation=1;
-                    }
-                    elseif(ord($letters[$y])==$ascciMin)
-                    {
-                        echo $letters[$y];
-                        $validation=1;   
-                    }
-                    $ascciMay++;
-                    $ascciMin++;
-                    
+                    echo $letters[$y];
+                    $validation=1;
                 }
-                if(ord($letters[$y])==33||ord($letters[$y])==63)
+                elseif(ord($letters[$y])==$ascciMin)
+                {
+                    echo $letters[$y];
+                    $validation=1;   
+                }
+                elseif(ord($letters[$y])==33||ord($letters[$y])==63)
                 {
                     echo $letters[$y];
                     $validation=1;
