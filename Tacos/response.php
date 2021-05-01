@@ -5,6 +5,7 @@
     $countC=0;
     $countD=0;
     
+    //Rutas de imágenes
     $past1="https://vivirmejor.mx/wp-content/uploads/2020/08/Comida-Tipica-Mexicana-Tacos-Pastor-Portada.jpg";
     $past2="https://www.hola.com/imagenes/cocina/recetas/20200312162968/tacos-al-pastor-mawey/0-797-445/tacos-al-pastor-mawey-m.jpg";    
     $past3="https://foodandtravel.mx/wp-content/uploads/2018/05/TacosalpastorFT.jpg";
@@ -52,8 +53,10 @@
     $response9=(isset($_POST["who"])&&$_POST["who"]!="")?$_POST["who"]:false;
     $response10=(isset($_POST["howOften"])&&$_POST["howOften"]!="")?$_POST["howOften"]:false;
     
+    //Se añade al arreglo vacío todos los valores enviados del formulario para facilitar encontar valores
     array_push($results, $response1,$response2,$response3,$response4,$response5,$response6,$response7,$response8,$response9,$response10);
 
+    //Ciclo que cuenta las respuestas registradas
     for($i=0;$i<10;$i++)
     {
         if($results[$i]==="A")
@@ -75,7 +78,7 @@
     }
 
     $random=rand(1,3);
-    
+    //Comparación y asignación de un resultado e imágen aleatorea de las rutas definidas
     if($countA>$countB&&$countA>$countC&&$countA>$countD)
     {
         echo "<h2>Eres un taco al pastor :3</h2>";
