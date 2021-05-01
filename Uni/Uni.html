@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Formulario para la Uni</title>
+    <title>Aplicación a la universidad</title>
 </head>
 <body>
     <form action=".\tabla.php" method="POST" target="_blank">
@@ -32,7 +32,7 @@
             <br><br><br>
             <label for="age"> Edad: <br>17|18|19|20|21|22|23|24|25
                 <br>
-                <input type="range" min="17" max="25" value="19" step="1">
+                <input type="range" name="age" min="17" max="25" value="19" step="1">
                 <datalist id="tickmarks">
                     <option value="17">
                     <option value="18">
@@ -60,7 +60,26 @@
             </label>
             <br><br>
             <label for="from">Escuela de procedencia
-                <input type="text" name="from" placeholder="Escuela" maxlength="70" required>
+                <select name="from" required>
+                    <option value="" disabled>-Selecciona-</option>
+                    <option value="Escuela Nacional Preparatoria plantel #1">Prepa 1</option>
+                    <option value="Escuela Nacional Preparatoria plantel #2">Prepa 2</option>
+                    <option value="Escuela Nacional Preparatoria plantel #3">Prepa 3</option>
+                    <option value="Escuela Nacional Preparatoria plantel #4">Prepa 4</option>
+                    <option value="Escuela Nacional Preparatoria plantel #5">Prepa 5</option>
+                    <option value="Escuela Nacional Preparatoria plantel #6">Prepa 6</option>
+                    <option value="Escuela Nacional Preparatoria plantel #7">Prepa 7</option>
+                    <option value="Escuela Nacional Preparatoria plantel #8">Prepa 8</option>
+                    <option value="Escuela Nacional Preparatoria plantel #9">Prepa 9</option>
+                    <option value="Colegio de ciencias y humanidades plantel Oriente">CCH Oriente</option>
+                    <option value="Colegio de ciencias y humanidades plantel Vallejo">CCH Vallejo</option>
+                    <option value="Colegio de ciencias y humanidades plantel Azcapotzalco">CCH Azcapo</option>
+                    <option value="Colegio de ciencias y humanidades plantel Naulcalpan">CCH Naucalpan</option>
+                    <option value="CECyT">CECyT</option>
+                    <option value="Conalep">Conalep</option>
+                    <option value="Colegio bachilleres">Colegio bachilleres</option>
+                    <option value="Otra">Otra</option>
+                </select>
             </label>
             <br><br>
             <label for="promedio">Promedio
