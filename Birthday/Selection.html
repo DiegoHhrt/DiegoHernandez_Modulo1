@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Time and birthday</title>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <td>
+                    <form action="./Actividad14.php" method="post">
+                        <fieldset>
+                            <label for="localHour">
+                                Ingresa la hora que quieres convertir:<input type="time" name="localHour">
+                            </label>
+                            <br><br>
+                            <label for="city">
+                                New York<input type="checkbox" name="city">
+                                Sao Paulo<input type="checkbox" name="city">
+                                <br>
+                                Madrid<input type="checkbox" name="city">
+                                París<input type="checkbox" name="city">
+                                <br>
+                                Roma<input type="checkbox" name="city">
+                                Atenas<input type="checkbox" name="city">
+                                <br>
+                                Beijing<input type="checkbox" name="city">
+                                Tokio<input type="checkbox" name="city">
+                            </label>
+                            <br><br>
+                            <button type="submit" name="Hour">Comparar</button>
+                        </fieldset>
+                    </form>
+                </td>
+                <td>
+                    <form action="./Actividad14.php" method="post">
+                        <fieldset>
+                            <label for="birthdate">
+                                <input type="date" name="birthdate" >
+                            </label>
+                            <br><br>
+                            <label for="consult">
+                                Días para próximo cumpleaños<input type="checkbox" name="consult">
+                                <br>
+                                Horas para próximo cumpleaños<input type="checkbox" name="consult">
+                                <br>
+                                Minutos para próximo cumpleaños<input type="checkbox" name="consult">
+                                <br>
+                                ¿Es fin de semana?<input type="checkbox" name="consult">
+                                <br>
+                            </label>
+                            <br><br>
+                            <button type="submit" name="Birth">Consultar</button>
+                        </fieldset>
+                    </form>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>
