@@ -262,25 +262,6 @@
         echo "<p>Shoot to the ocean</p>";
         echo "<p>Historial de disparos:</p>";
         $x=0;
-        
-        if($BARCOx1!=0&&$barquitoy1!=0)
-        {
-            $boatx1=$BARCOx1;
-            $boatx2=$BARCOx2;
-            $boatx3=$BARCOx3;
-            $boaty1=$BARCOy1;
-            $boaty2=$BARCOy2;
-            $boaty3=$BARCOy3;
-            $Bx1=$barquitox1;
-            $Bx2=$barquitox2;
-            $Bx3=$barquitox3;
-            $Bx4=$barquitox4;
-            $By1=$barquitoy1;
-            $By2=$barquitoy2;
-            $By3=$barquitoy3;
-            $By4=$barquitoy4;
-
-        }
 
         if($toPush!="0")
         {
@@ -353,20 +334,7 @@
                     echo "<tr>";
                 }
                 echo "<br><br><br>";
-                echo $BARCOx1;
-                echo $BARCOx2;
-                echo $BARCOx3;
-                echo $BARCOx4;
-                echo $barquitox1;
-                echo $barquitox2;
-                echo $barquitox3;
-                echo $BARCOy1;
-                echo $BARCOy2;
-                echo $BARCOy3;
-                echo $BARCOy4;
-                echo $barquitoy1;
-                echo $barquitoy2;
-                echo $barquitoy3;
+
 
             
         echo"</tbody>";
