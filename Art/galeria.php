@@ -7,11 +7,14 @@
     
     if((isset($_FILES["arch"])))
     {
+        
+        if()
+        {
+
+        }
+
         $fileName
         $ex=pathinfo();
-
-
-
 
     }
     else
