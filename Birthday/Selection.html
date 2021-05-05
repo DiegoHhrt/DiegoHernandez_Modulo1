@@ -11,24 +11,24 @@
                     <form action="./Actividad14.php" method="post">
                         <fieldset>
                             <label for="localHour">
-                                Ingresa la hora que quieres convertir:<input type="time" name="localHour">
+                                Ingresa la hora que quieres convertir: (CDMX)<input type="time" name="localHour" required>
                             </label>
                             <br><br>
                             <label for="city">
-                                New York<input type="checkbox" name="city">
-                                Sao Paulo<input type="checkbox" name="city">
+                                New York<input type="checkbox" name="city[]" value="New York">
+                                Sao Paulo<input type="checkbox" name="city[]" value="Sao Paulo">
                                 <br>
-                                Madrid<input type="checkbox" name="city">
-                                París<input type="checkbox" name="city">
+                                Madrid<input type="checkbox" name="city[]" value="Madrid">
+                                París<input type="checkbox" name="city[]" value="Paris">
                                 <br>
-                                Roma<input type="checkbox" name="city">
-                                Atenas<input type="checkbox" name="city">
+                                Roma<input type="checkbox" name="city[]" value="Roma">
+                                Atenas<input type="checkbox" name="city[]" value="Atenas">
                                 <br>
-                                Beijing<input type="checkbox" name="city">
-                                Tokio<input type="checkbox" name="city">
+                                Beijing<input type="checkbox" name="city[]" value="Beijing">
+                                Tokio<input type="checkbox" name="city[]" value="Tokio">
                             </label>
                             <br><br>
-                            <button type="submit" name="Hour">Comparar</button>
+                            <button type="submit" name="Hour" value="compare">Comparar</button>
                         </fieldset>
                     </form>
                 </td>
@@ -40,17 +40,17 @@
                             </label>
                             <br><br>
                             <label for="consult">
-                                Días para próximo cumpleaños<input type="checkbox" name="consult">
+                                Días para próximo cumpleaños<input type="checkbox" name="consult[]" value="Days To">
                                 <br>
-                                Horas para próximo cumpleaños<input type="checkbox" name="consult">
+                                Horas para próximo cumpleaños<input type="checkbox" name="consult[]" value="Hours To">
                                 <br>
-                                Minutos para próximo cumpleaños<input type="checkbox" name="consult">
+                                Minutos para próximo cumpleaños<input type="checkbox" name="consult[]" value="Minuts To">
                                 <br>
-                                ¿Es fin de semana?<input type="checkbox" name="consult">
+                                ¿Es fin de semana?<input type="checkbox" name="consult[]" value="weeknd">
                                 <br>
                             </label>
                             <br><br>
-                            <button type="submit" name="Birth">Consultar</button>
+                            <button type="submit" name="Birth" value="consult">Consultar</button>
                         </fieldset>
                     </form>
                 </td>

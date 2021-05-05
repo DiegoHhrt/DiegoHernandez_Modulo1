@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Galería de arte</title>
+    </head>
+    <body>
+        <h3>¡Ingresa una obra de arte a tu galería!</h3>
+        <br>
+        <form action="galeria.php" method="POST" enctype="multipart/form-data">
+            <fieldset>
+                <legend>Registro de la obra</legend>
+                <label for="Obra">
+                    Ingresa el nombre de la obra:  <input type="text" name="Obra" placeholder="Nombre de la obra" required>    
+                </label>
+                <br><br>
+                <label for="autor">
+                    Ingresa el nombre del autor:  <input type="text" name="autor" placeholder="Nombre del/la autor/a">    
+                </label>
+                <br><br>
+                <label for="year">
+                    Ingresa su año de creación:  <input type="number" name="year" min="-2000" max="2022" mi placeholder="año">
+                </label>
+                <br><br>
+                <label for="arch">
+                    Ingresa tu archivo:<input type="file" name="arch" required>
+                </label>
+                <br><br>
+                <button type="submit">Subir obra</button>
+            </fieldset>
+        </form>        
+    </body>
+</html>
