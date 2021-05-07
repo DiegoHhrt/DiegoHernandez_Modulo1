@@ -1,4 +1,6 @@
 <?php
+session_name("DDDDD");
+session_start();
 
 if((isset($_SESSION['start'])))
 {
@@ -26,12 +28,12 @@ else
                 </label>
                 <br><br>
                 <label for='Group'>
-                    Grupo: <input type='text' name='Group' placeholder='Grupo' required>
+                    Grupo: <input type='text' name='Group' placeholder='Grupo' maxlenght='5' required>
                 </label>
                 <br><br>
                 <label for='birth'>";
                 
-                    echo "Fecha de nacimiento:  <input type='date' name='birth' min='1930-01-01' max='.date('Y-m-d').' required>"; 
+                    echo "Fecha de nacimiento:  <input type='date' name='birth' min='1930-01-01' max='".date('Y-m-d')."' required>"; 
                     //var_dump($_SESSION['start']);
                 echo "
                 </label>
