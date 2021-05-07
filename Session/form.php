@@ -1,5 +1,11 @@
 <!DOCTYPE html>
 <html>
+    <?php
+        if((isset($_SESSION["start"])))
+        {
+            header("location: ./index.php");
+        }
+    ?>
     <head>
         <meta charset="UTF-8">
         <title>Inicio de sesión</title>
@@ -21,16 +27,20 @@
             </label>
             <br><br>
             <label for="birth">
-                Fecha de nacimiento:  <input type="date" name="birth" min="1930-01-01" required>  <!--max=".date("Y-"). -->
+            <?php
+                echo "Fecha de nacimiento:  <input type='date' name='birth' min='1930-01-01' max=".date("Y-m-d")." required>"; 
+                var_dump($_SESSION['start']);
+            ?>
             </label>
             <br><br>
             <label for="mail">
-                <input type="email" name="mail" placeholder="example@mail.com" required>
+                Correo electrónico: <input type="email" name="mail" placeholder="example@mail.com" required>
             </label>
             <br><br>
             <label for="passwd">
-                <input type="password" name="passwd" required>
+                Contraseña: <input type="password" name="passwd" required>
             </label>
+            <button type="submit" name="send" value="init">Iniciar sesión</button>
         </fieldset>
         </form>
     </body>
